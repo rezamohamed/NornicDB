@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Enforce database storage and write-rate quotas on implicit and explicit transaction commits, including HTTP and Bolt. Reject over-quota transactions before publication and account for committed property updates and cascading deletes.
+
 ## [1.4.3] - 2026-10-15
 
 ### Fixed
